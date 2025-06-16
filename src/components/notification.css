@@ -9,7 +9,7 @@
 }
 
 .success {
-    background-color: green;
+    background-color: rgb(59, 160, 59);
 }
 
 .info {
@@ -21,7 +21,7 @@
 }
 
 .error {
-    background-color: red;
+    background-color: rgb(201, 63, 63);
 }
 
 .closeButton {

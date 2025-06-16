@@ -1,9 +1,9 @@
 import Notification from './components/notification'
-import './App.css'
+import './components/notification.css'
 import useNotification from './hooks/use-notification'
 
 export default function App() {
-    const {NotificationComponent, triggerNotification} = useNotification('top-right')
+    const {NotificationComponent, triggerNotification} = useNotification('bottom-left')
 
     return (
         <div>

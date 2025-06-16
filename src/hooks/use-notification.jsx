@@ -1,8 +1,7 @@
 import { useState } from "react";
 import Notification from "../components/notification";
-import '../components/notification.css'
 
-export default function useNotification(position='top-right') {
+export default function useNotification(position='bottom-left') {
     const [notification, setNotification] = useState(null)
 
     function triggerNotification(notificationProps) {
