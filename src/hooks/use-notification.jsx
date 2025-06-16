@@ -6,6 +6,9 @@ export default function useNotification(position='top-right') {
 
     function triggerNotification(notificationProps) {
         setNotification(notificationProps)
+        setTimeout(() => {
+            setNotification(null)
+        }, notificationProps.duration)
     }
 
     const NotificationComponent = notification ? (
