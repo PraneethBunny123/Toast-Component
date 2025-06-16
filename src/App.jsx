@@ -1,17 +1,19 @@
 import Notification from './components/notification'
-
 import './App.css'
+import useNotification from './hooks/use-notification'
 
-function App() {
+export default function App() {
+    const {NotificationComponent, triggerNotification} = useNotification('top-right')
 
-  
-
-  return (
-    <>
-      <Notification type='info' message='A new toast' />
-
-    </>
-  )
+    return (
+        <div>
+            <button onClick={() => triggerNotification({
+                type: "info", 
+                message: "Success", 
+                duration: 3000, 
+                onclose: () => {}
+            })}>Trigger Success</button>
+            {NotificationComponent}
+        </div>
+    )
 }
-
-export default App
