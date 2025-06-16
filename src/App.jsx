@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <Notification type='warning' message='A new toast' />
+      <Notification type='success' message='A new toast' />
     </>
   )
 }

@@ -1,4 +1,5 @@
 import { AiOutlineCheckCircle, AiOutlineClose, AiOutlineCloseCircle, AiOutlineInfoCircle, AiOutlineWarning } from "react-icons/ai"
+import './notification.css'
 
 const icons = {
     success: <AiOutlineCheckCircle />,
