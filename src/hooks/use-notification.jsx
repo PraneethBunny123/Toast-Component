@@ -15,5 +15,7 @@ export default function useNotification(position='top-right') {
         <div>
             <Notification {...notification} />
         </div>
-    )
+    ) : null;
+
+    return {NotificationComponent, triggerNotification}
 }
