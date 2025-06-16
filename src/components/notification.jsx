@@ -1,4 +1,4 @@
-import { AiOutlineCheckCircle, AiOutlineCloseCircle, AiOutlineInfoCircle, AiOutlineWarning } from "react-icons/ai"
+import { AiOutlineCheckCircle, AiOutlineClose, AiOutlineCloseCircle, AiOutlineInfoCircle, AiOutlineWarning } from "react-icons/ai"
 
 const icons = {
     success: <AiOutlineCheckCircle />,
@@ -9,9 +9,10 @@ const icons = {
 
 export default function Notification({type="info", message, onClose}) {
     return (
-        <div>
+        <div className={`notification ${type}`}>
             {icons[type]}
             {message}
+            <AiOutlineClose color="white" />
         </div>
     )
 }
