@@ -13,7 +13,7 @@
 }
 
 .info {
-    background-color: lightskyblue;
+    background-color: rgb(35, 154, 228);
 }
 
 .warning {
@@ -22,4 +22,11 @@
 
 .error {
     background-color: red;
+}
+
+.closeButton {
+    margin-left: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
 }
