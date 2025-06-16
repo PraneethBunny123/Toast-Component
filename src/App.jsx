@@ -8,11 +8,21 @@ export default function App() {
     return (
         <div>
             <button onClick={() => triggerNotification({
-                type: "info", 
-                message: "Success", 
+                type: "success", 
+                message: "The test was successfull", 
                 duration: 3000, 
                 onclose: () => {}
-            })}>Trigger Success</button>
+            })}>
+                Trigger Success
+            </button>
+            <button onClick={() => triggerNotification({
+                type: "error", 
+                message: "The test was failed", 
+                duration: 3000, 
+                onclose: () => {}
+            })}>
+                Trigger Error
+            </button>
             {NotificationComponent}
         </div>
     )
