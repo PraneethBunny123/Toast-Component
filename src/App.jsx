@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Notification from './components/notification'
 
 import './App.css'
 
@@ -7,8 +8,7 @@ function App() {
 
   return (
     <>
-      <div>Hello
-      </div>
+      <Notification type='warning' message='A new toast' />
     </>
   )
 }

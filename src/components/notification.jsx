@@ -10,7 +10,8 @@ const icons = {
 export default function Notification({type="info", message, onClose}) {
     return (
         <div>
-
+            {icons[type]}
+            {message}
         </div>
     )
 }
